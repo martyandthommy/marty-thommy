@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+	<script>
+  const PASSWORD = "27092025"; // <-- inserisci qui la tua password
+  const inserita = prompt("Inserisci la password per accedere:");
+
+  if (inserita !== PASSWORD) {
+    document.write("<h1>Accesso negato ❌</h1>");
+    throw new Error("Accesso negato");
+  }
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marty & Thommy</title>
